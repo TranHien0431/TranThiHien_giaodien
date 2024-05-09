@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Example</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/layoutsite.css">
+    <script src="assets/jqurey/jquery-3.7.1.min.js"></script>
+</head>
+<style>
+    /* Style to change text color to black */
+</style>
+
+
+<body>
+
+    <!-- Header Section -->
+    <header class="section_header">
+        <div class="container">
+            <div class="row py-2">
+                <div class="col-3 col-md-2 order-1 order-md-1">
+                    <a href="index.html">
+                        <img src="assets/images/logo.webp" class="logo" alt="Logo" height="80px" width="160px">
+                    </a>
+                </div>
+                <div class="col-12 col-md-8 order-3 order-md-2 py-3">
+                    <nav class="navbar navbar-expand-lg bg-white" data-bs-theme="light">
+                        <div class="container-fluid">
+                            <a class="navbar-brand d-none" href="#">Navbar</a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Thương hiệu</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Trang điểm
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Kem nền</a></li>
+                                            <li><a class="dropdown-item" href="#">Kem che khuyết điểm</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Kem lót</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Chăm sóc
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Chăm sóc body</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Chăm sóc tóc</a></li>
+
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Dương da
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Mặt nạ</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Làm sạch</a></li>
+
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+
+                <div class="col-9 col-md-2 order-2 order-md-3 text-end py-4">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item px-1 position-relative">
+                            <button type="button" class="  btn btn-light  mx-2">
+                                <i class="fa-regular fa-heart"></i>
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
+                                    2
+                                </span>
+                            </button>
+                        </li>
+                        <li class="nav-item px-1 position-relative">
+                            <button type="button" class="  btn btn-light  mx-2">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
+                                    1
+
+                                </span>
+                            </button>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/images/slider_1.webp" height="600px" width="300" alt="Los Angeles"
+                    class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/slider_2.webp" height="600px" width="300" alt="Chicago" class="d-block w-100">
+            </div>
+
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <section class="product-category">
+        <h2>Product Categories</h2>
+
+    </section>
+
+    <!-- New Products Section -->
+    <section class="product-new">
+        <div class="product_new bg-light">
+            <h2>SẢN PHẨM MỚI</h2>
+            <div class="row py-2">
+                <div class="col-md-3">
+                    <div class="card" style="width: 250px;">
+                        <img src="assets/images/Son_tint.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Son Tint</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make and make
+                                and make up the bulk of the more time .</p>
+                            <a href="#" class="btn btn-success">200.000đ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="card" style="width: 260px;  ">
+                        <img src="assets/images/Mat_cara.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Mascara</h5>
+                            <p class="card-text">Mascara ZEESEA kháng nước lâu trôi 36h chống nhòe chuốt mi cong vút và
+                                dài hơn lâu hơn khi sử dụng.</p>
+                            <a href="#" class="btn btn-success">75.000</a>
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: 250px;">
+                        <img src="assets/images/sua_rua_mat.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Sữa rữa mặt</h5>
+                            <p class="card-text">[BILL 499K TẶNG 1 MINISIZE - SL GIỚI HẠN] Sữa Rửa Mặt Dịu Nhẹ Cetaphil
+                                Gentle Skin Haki </p>
+                            <a href="#" class="btn btn-success">400.000</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: 250px;">
+                        <img src="assets/images/Cocoon.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Cocoon</h5>
+                            <p class="card-text">Bộ cà phê Đắk Lắk làm sạch da chết cocoon: da mặt 150ml + cơ thể 200ml
+                                Hasaki chinh hãng.</p>
+                            <a href="#" class="btn btn-success">250.000</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+    <!-- Sale Products Section -->
+    <section class="product-sale ">
+        <div class="product_sale">
+            <div class="bg-light">
+                <h2>SẢN PHẨM SALE</h2>
+            </div>
+           <div class="row py-2">
+                        <div class="col-md-3">
+                            <div class="card" style="width: 250px;">
+                                <img src="assets/images/MAYBELLINE.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">MAYBELLINE</h5>
+                                    <p class="card-text">Son Kem Lì 16h Lâu Trôi Maybelline New York Matte Ink City Edition
+                                        Lipstick 5ml</p>
+                                        
+                                    <a href="#" class="btn btn-success">150.00</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 ">
+                            <div class="card" style="width: 260px;  ;">
+                                <img src="assets/images/ROCHE_POSAY.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">ROCHE-POSAY</h5>
+                                    <p class="card-text">Gel rửa mặt cho da dầu nhạy cảm La Roche-Posay Effaclar Foaming Gel
+                                        400ml tiết kiệm hơn</p>
+                                    <a href="#" class="btn btn-success">175.000</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card" style="width: 250px;">
+                                <img src="assets/images/KLAIRS.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">KLAIRS</h5>
+                                    <p class="card-text">Nước hoa hồng Dear, Klairs Supple Preparation Facial Toner 180ml sử
+                                        dung tiện lợi hơn </p>
+                                    <a href="#" class="btn btn-success">486.000</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card" style="width: 250px;">
+                                <img src="assets/images/GẢNIER.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">GARNIER</h5>
+                                    <p class="card-text">Nước Tẩy Trang làm sạch sâu dịu nhẹ cho mọi loại da - Garnier Micellar
+                                        Cleansing Water 400ml</p>
+                                    <a href="#" class="btn btn-success">250.000</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+    </section>
+
+    <!-- Latest Posts Section -->
+    <section class="post-new">
+        <div class="bg-light">
+            <h2>BLOG LÀM ĐẸP</h2>
+        </div>
+
+        <div class="container py-3 ">
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="index.html">
+                        <img src="assets/images/a.webp" class="logo" alt="Logo" height="200px" width="290px">
+                    </a>
+                    <h6>Rửa mặt bằng nước muối sinh lý như thế nào để không hại da?</h6>
+                    <p>Bạn có thể dễ dàng rửa mặt bằng nước muối sinh lý hằng ngày. Dung dịch đặc biệt...</p>
+
+
+                </div>
+                <div class="col-md mx-1">
+                    <a href="index.html">
+                        <img src="assets/images/b.webp" class="logo" alt="Logo" height="190px" width="260px">
+                    </a>
+                    <h6>Glycerin - Hợp chất “quốc dân” trong dưỡng da</h6>
+                    <p> Glycerin là hợp chất phổ biến trong các sản phẩm làm đẹp vì đem lại nhiều...</p>
+
+                </div>
+                <div class="col-md">
+                    <a href="index.html">
+                        <img src="assets/images/untitled-1ad.webp" class="logo" alt="Logo" height="190px" width="290px">
+                    </a>
+                    <h6>Serum là gì? Cách sử dụng serum để đạt kết quả tốt nhất
+                    </h6>
+                    <p> Serum là một sản phẩm chỉ mới xuất hiện vài năm gần đây. Tuy nhiên, mức độ...</p>
+                </div>
+                <div class="col-md-3">
+                    <a href="index.html">
+                        <img src="assets/images/untitled-1ag.webp" class="logo" alt="Logo" height="190px" width="260px">
+                    </a>
+                    <h6>Glycerin - Hợp chất “quốc dân” trong dưỡng da</h6>
+                    <p> Glycerin là hợp chất phổ biến trong các sản phẩm làm đẹp vì đem lại nhiều...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="section_footer bg-light text-dark">
+        <div class="container py-3 ">
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="index.html">
+                        <img src="assets/images/logo.webp" class="logo" alt="Logo" height="50px" width="100px">
+                    </a>
+                    <p>Không phải những người đẹp là những người hạnh phúc, mà những người hạnh phúc mới là những người
+                        đẹp.</p>
+                       
+                            <!-- Facebook -->
+                            <a
+                            data-mdb-ripple-init
+                              class="btn text-white btn-floating m-1"
+                              style="background-color: #3b5998;"
+                              href="#!"
+                              role="button"
+                              ><i class="fab fa-facebook-f"></i
+                            ></a>
+                      
+                            <!-- Twitter -->
+                            <a
+                              data-mdb-ripple-init
+                              class="btn text-white btn-floating m-1"
+                              style="background-color: #55acee;"
+                              href="#!"
+                              role="button"
+                              ><i class="fab fa-twitter"></i
+                            ></a>
+                      
+                            <!-- Google -->
+   <!-- Instagram -->
+                            <a
+                              data-mdb-ripple-init
+                              class="btn text-white btn-floating m-1"
+                              style="background-color: #e47ce4;"
+                              href="#!"
+                              role="button"
+                              ><i class="fab fa-instagram"></i
+                            ></a>
+                      
+                            <!-- Linkedin -->
+                           
+                            <!-- Github -->
+                            <a
+                              data-mdb-ripple-init
+                              class="btn text-white btn-floating m-1"
+                              style="background-color: #333333;"
+                              href="#!"
+                              role="button"
+                              ><i class="fab fa-github"></i
+                            ></a>
+                          </section>
+                          <!-- Section: Social media -->
+                        
+
+                </div>
+                <div class="col-md mx-1">
+                    <h5>THÔNG TIN LIÊN HỆ</h5>
+                    <p>Địa chỉ: 70 Lữ Gia, Phường 15, Quận 11, TP. Hồ Chí Minh</p>
+                    <p>Điện thoại: 1900 6750</p>
+                    <p>Email: support@sapo.vn</p>
+                </div>
+                <div class="col-md">
+                    <h5>CHÍNH SÁCH</h5>
+                    <ul class="container-footer">
+                        <li><a class="dropdown-item" href="#">Chính sách và quy định chung</a></li>
+                        <li><a class="dropdown-item" href="#">Chính sách thanh toán</a></li>
+                        <li><a class="dropdown-item" href="#">Chính sách giao nhận</a></li>
+                        <li><a class="dropdown-item" href="#">Chính sách đổi trả sản phẩm</a></li>
+                        <li><a class="dropdown-item" href="#">Điều khoản sử dụng</a></li>
+                        <li><a class="dropdown-item" href="#">Chính sách bảo mật thông tin cá nhân</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h5>HỖ TRỢ</h5>
+                    <ul class="container-footer">
+                        <li><a class="dropdown-item" href="#">Quyền lợi Dino-er</a></li>
+                        <li><a class="dropdown-item" href="#">Thông tin thành viên</a></li>
+                        <li><a class="dropdown-item " href="#">Tích điểm đổi quà</a></li>
+                        <li><a class="dropdown-item" href="#">Hệ thống cửa hàng</a></li>
+                        <li><a class="dropdown-item" href="#">Tuyển dụng</a></li>
+                        <li><a class="dropdown-item" href="#">Liên hệ</a></li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/css/layoutsite.css"></script>
+</body>
+
+</html>
